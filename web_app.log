@@ -1,0 +1,18 @@
+{"level":"error","ts":1648975891.8599465,"msg":"invalid parameters","error":"invalid character '-' in numeric literal"}
+{"level":"info","ts":1648975891.8612733,"msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.0","latency":0.0013268,"time":"Sunday, 03-Apr-22 08:51:31 UTC"}
+{"level":"error","ts":1648975958.5849023,"msg":"invalid parameters","error":"invalid character '-' in numeric literal"}
+{"level":"info","ts":1648975958.5849023,"msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.0","latency":0,"time":"Sunday, 03-Apr-22 08:52:38 UTC"}
+{"level":"info","ts":1648978888.595363,"msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.0","latency":0.0319064,"time":"Sunday, 03-Apr-22 09:41:28 UTC"}
+{"level":"info","ts":1648979242.6154656,"msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.0","latency":0.0090241,"time":"Sunday, 03-Apr-22 09:47:22 UTC"}
+{"level":"info","ts":1648980111.5513656,"msg":"the user has already existed,sign up failed","LL":"exist"}
+{"level":"info","ts":1648980111.5518787,"msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.0","latency":0.0018529,"time":"2022-04-03T10:01:51Z"}
+{"level":"info","ts":1648980112.5433297,"msg":"the user has already existed,sign up failed","LL":"exist"}
+{"level":"info","ts":1648980112.5433297,"msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.0","latency":0.005316,"time":"2022-04-03T10:01:52Z"}
+{"level":"info","ts":1648980113.2624,"msg":"the user has already existed,sign up failed","LL":"exist"}
+{"level":"info","ts":1648980113.2629094,"msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.0","latency":0.0008619,"time":"2022-04-03T10:01:53Z"}
+1.64898085287551e+09	info	the user has already existed,sign up failed	{"LL": "exist"}
+1.6489808528761137e+09	info	/signup	{"status": 200, "method": "POST", "path": "/signup", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.29.0", "latency": 0.0019353, "time": "2022-04-03T10:14:12Z"}
+1.6489808539055374e+09	info	the user has already existed,sign up failed	{"LL": "exist"}
+1.6489808539055948e+09	info	/signup	{"status": 200, "method": "POST", "path": "/signup", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.29.0", "latency": 0.0012431, "time": "2022-04-03T10:14:13Z"}
+1.648980854588781e+09	info	the user has already existed,sign up failed	{"LL": "exist"}
+1.6489808545892882e+09	info	/signup	{"status": 200, "method": "POST", "path": "/signup", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime/7.29.0", "latency": 0.0009622, "time": "2022-04-03T10:14:14Z"}
