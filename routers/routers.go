@@ -2,6 +2,7 @@ package routers
 
 import (
 	"time"
+	"webapp/controller"
 
 	gzap "github.com/gin-contrib/zap"
 	"github.com/gin-gonic/gin"
@@ -12,6 +13,6 @@ func Init() (r *gin.Engine) {
 	r = gin.New()
 	r.Use(gzap.Ginzap(zap.L(), time.RFC850, true))
 	r.Use(gzap.RecoveryWithZap(zap.L(), true))
-	//r.GET()
+	r.POST("/signup", controller.SignUp)
 	return
 }

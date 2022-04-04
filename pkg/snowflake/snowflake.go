@@ -1,6 +1,7 @@
-package pkg
+package snowflake
 
 import (
+	"fmt"
 	"time"
 
 	"github.com/bwmarrin/snowflake"
@@ -18,6 +19,8 @@ func Init(startTime string, machineID int64) (err error) {
 	node, err = snowflake.NewNode(machineID)
 	return
 }
-func GenID() int64 {
-	return node.Generate().Int64()
+func GenID() string {
+	s := node.Generate().String()
+	fmt.Println(s)
+	return s
 }

@@ -20,7 +20,7 @@ type App struct {
 }
 type Mysql struct {
 	Host     string `mapstructure:"host"`
-	Name     string `mapstructure:"name"`
+	Name     string `mapstructure:"user"`
 	Password string `mapstructure:"password"`
 	Dbname   string `mapstructure:"dbname"`
 	Port     int    `mapstructure: "port"`

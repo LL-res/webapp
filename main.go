@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"webapp/dao/mysql"
 	"webapp/logger"
+	"webapp/pkg/snowflake"
 	"webapp/routers"
 	"webapp/settings"
 
@@ -30,7 +31,7 @@ func main() {
 		return
 	}
 	defer mysql.Db.Close()
-
+	snowflake.Init("2022-04-04", 1)
 	//初始化redis
 	//注册路由
 	r := routers.Init()
