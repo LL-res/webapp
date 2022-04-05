@@ -14,5 +14,6 @@ func Init() (r *gin.Engine) {
 	r.Use(gzap.Ginzap(zap.L(), time.RFC850, true))
 	r.Use(gzap.RecoveryWithZap(zap.L(), true))
 	r.POST("/signup", controller.SignUp)
+	r.POST("login", controller.LogIn)
 	return
 }

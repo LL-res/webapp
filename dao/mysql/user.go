@@ -32,3 +32,11 @@ func Encrypt(s string) string {
 	h.Write([]byte(s))
 	return hex.EncodeToString(h.Sum(nil))
 }
+func QueryPasswordByName(name string) (string, error) {
+	sqlStr := "select password from user where username = ?"
+	var ans string
+	if err := Db.Get(&ans, sqlStr, name); err != nil {
+		return "", err
+	}
+	return ans, nil
+}

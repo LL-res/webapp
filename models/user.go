@@ -10,3 +10,7 @@ type User struct {
 	PassWord string
 	ID       string
 }
+type LogInUser struct {
+	Name     string `json:"name" form:"name" binding:"required"`
+	Password string `json:"password" form:"name" binding:"required"`
+}
