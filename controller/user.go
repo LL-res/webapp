@@ -4,10 +4,15 @@ import (
 	"errors"
 	"webapp/logic"
 	"webapp/models"
+	"webapp/pkg/jwt"
 
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 )
+
+const CurrentName = "username"
+
+var ErrorUserNotLogin = errors.New("user not log in")
 
 func SignUp(c *gin.Context) {
 	var t models.SignUpUser
@@ -47,5 +52,14 @@ func LogIn(c *gin.Context) {
 		return
 	}
 	//返回响应
-	ResponseSuccess(c, nil)
+	token, _ := jwt.GenToken(t.Name) //这里最好的处理是把这个东西扔到logic层，让logic层的Login函数返回一个string与error
+	ResponseSuccess(c, token)
+}
+func GetCurrentUser(c *gin.Context) (string, error) {
+	username, ok := c.Get(CurrentName)
+	if !ok {
+		ResponseErrorWithMsg(c, CodeAuthFail, "please log in")
+		return "", ErrorUserNotLogin
+	}
+	return username.(string), nil
 }

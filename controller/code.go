@@ -9,6 +9,7 @@ const (
 	CodeUserNoExist
 	CodeInvalidPassword
 	CodeBusyServer
+	CodeAuthFail
 )
 
 var codeMsgMap = map[Statuscode]string{
@@ -18,6 +19,7 @@ var codeMsgMap = map[Statuscode]string{
 	CodeUserNoExist:     "No such user",
 	CodeInvalidPassword: "invalid user or password",
 	CodeBusyServer:      "the server is now busy",
+	CodeAuthFail:        "fail to authorize",
 }
 
 func (s Statuscode) Msg() string {
